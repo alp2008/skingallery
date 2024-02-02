@@ -6,10 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Auto
 {
@@ -49,37 +47,14 @@ namespace Auto
 
             skin[] skin_list = new skin[5];
 
-            skin_list[0] = new Car("glitchpop", "Phantom", "legendary", 87, 100000);
+            skin_list[0] = new skin("glitchpop", "Phantom", "legendary", 87, 100000);
             skin_list[1] = new skin("NeoFrotier", "Sherif", "legendary", 120, 200000);
             skin_list[2] = new skin("radiant entertainment system", "Operator", "exotic", 140, 300000);
             skin_list[3] = new skin("rgx", "Frenzy", "legendary", 150, 400000);
             skin_list[4] = new skin("overdrive", "Vandal", "legendary", 180, 500000);
             
 
-            Text = "Справочник по автомобилям";
-
-            int x = 30;
-            int y = 30;
-            for(int i=0; i<5; i++)
-            {
-                skin_list[i].btn.Location = new Point(x, y+160);
-                skin_list[i].btn.Size = new Size(230, 30);
-                skin_list[i].btn.UseVisualStyleBackColor = true;
-                skin_list[i].btn.Click += new EventHandler(button1_Click);
-                ViewPanel.Controls.Add(car_list[i].btn);
-
-                skin_list[i].pic.Location = new Point(x, y);
-                skin_list[i].pic.Size = new Size(232, 145);
-                skin_list[i].pic.SizeMode = PictureBoxSizeMode.Zoom;
-                ViewPanel.Controls.Add(car_list[i].pic);
-
-                x += 240;
-                if(x>900)
-                {
-                    y += 200;
-                    x = 30;
-                }
-            }
+            Text = "Справочник по скинам";
                        
 
         }
@@ -90,5 +65,38 @@ namespace Auto
             InfoForm info = new InfoForm(btn.Text);
             info.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            int x = 30;
+            int y = 30;
+            for (int i = 0; i < 5; i++)
+            {
+                skin_list[i].btn.Location = new Point(x, y + 160);
+                skin_list[i].btn.Size = new Size(230, 30);
+                skin_list[i].btn.UseVisualStyleBackColor = true;
+                skin_list[i].btn.Click += new EventHandler(button1_Click);
+                ViewPanel.Controls.Add(skin_list[i].btn);
+
+                skin_list[i].pic.Location = new Point(x, y);
+                skin_list[i].pic.Size = new Size(232, 145);
+                skin_list[i].pic.SizeMode = PictureBoxSizeMode.Zoom;
+                ViewPanel.Controls.Add(skin_list[i].pic);
+
+                x += 240;
+                if (x > this.Size.Width - 150)
+                {
+                    y += 200;
+                    x = 30;
+                }
+            }
+        }
+
+        private void FiltrPanel_Paint(object sender, PaintEventArgs e)
+        {
+            MainForm.Void(null, null);
+        }
     }
 }
+
+

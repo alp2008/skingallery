@@ -59,6 +59,7 @@
             this.FiltrPanel.Name = "FiltrPanel";
             this.FiltrPanel.Size = new System.Drawing.Size(1032, 127);
             this.FiltrPanel.TabIndex = 10;
+            this.FiltrPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FiltrPanel_Paint);
             // 
             // MainForm
             // 
@@ -74,6 +75,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Resize += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

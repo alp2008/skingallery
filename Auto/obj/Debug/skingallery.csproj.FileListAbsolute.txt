@@ -1,0 +1,12 @@
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\skingallery.csproj.AssemblyReference.cache
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\skingallery.csproj.SuggestedBindingRedirects.cache
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\Auto.InfoForm.resources
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\Auto.MainForm.resources
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\Auto.Properties.Resources.resources
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\skingallery.csproj.GenerateResource.cache
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\skingallery.csproj.CoreCompileInputs.cache
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\Auto.exe
+D:\пономарёв александр\skingallery-main\Auto\obj\Debug\Auto.pdb
+D:\пономарёв александр\skingallery-main\Auto\bin\Debug\Auto.exe.config
+D:\пономарёв александр\skingallery-main\Auto\bin\Debug\Auto.exe
+D:\пономарёв александр\skingallery-main\Auto\bin\Debug\Auto.pdb
